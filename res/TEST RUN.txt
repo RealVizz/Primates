@@ -1,0 +1,119 @@
+World starts with creating a sanctuary so we create a sanctuary
+Sanctuary has no Isolation and Enclosures, so no animal must be added
+Monkey Added : false
+Let us add an Enclosure with size = 50
+Monkey should not be added as they first go to Isolations
+Monkey Added : false
+Let us add an Isolation
+Lets try to add an monkey to sanctuary
+Monkey Added : true
+Let us try adding 1 more
+Monkey Added : true
+A new monkey could be added because enclosure had space to accommodate it
+Let us check the state of all the monkeys in the sanctuary
+Monkey{size=20.0, age=1.0, name='Lovely Animal', sex=M, weight=10.0, favoriteFood=FRUIT, contained_inside='', areaNeeded=10.0, species=HOWLER, UUID='ce8a9c146fbe45f8a13e2f2d31797141'}
+Monkey{size=20.0, age=1.0, name='Lovely Animal', sex=M, weight=10.0, favoriteFood=FRUIT, contained_inside='Isolation', areaNeeded=10.0, species=HOWLER, UUID='0eac738d8146496ebe7b87a259e6e3d1'}
+As report Suggest, 1 monkey is in Isolation & 1 in Enclosement/Enclosure
+Let us check whether the sanctuary manages to have GUEREZA monkey
+Monkey Added : true
+Monkey{size=20.0, age=1.0, name='Lovely Animal', sex=M, weight=10.0, favoriteFood=FRUIT, contained_inside='', areaNeeded=10.0, species=HOWLER, UUID='0eac738d8146496ebe7b87a259e6e3d1'}
+Monkey{size=20.0, age=1.0, name='Lovely Animal', sex=M, weight=10.0, favoriteFood=FRUIT, contained_inside='', areaNeeded=10.0, species=HOWLER, UUID='ce8a9c146fbe45f8a13e2f2d31797141'}
+Monkey{size=20.0, age=1.0, name='Lovely Animal', sex=M, weight=10.0, favoriteFood=FRUIT, contained_inside='Isolation', areaNeeded=10.0, species=GUEREZA, UUID='d93ee0a8616742acb22fdc7d92a9b69a'}
+Hmm, we see it handled it well, the new species added was GUEREZA, it tried to accommodate the new species logically well, it shifted the HOWLER into an enclosement 
+and added the GUEREZA into Isolation
+Lets check whether the Enclosement manages to have an HOWLER monkey
+Monkey Added : false
+Seems reasonable as Isolation was not empty and Enclosure was accommodating HOWLER species, which is different from GUEREZA
+Lets add an Isolation
+Lets check again, adding a HOWLER into isolation
+Monkey Added : true
+Lets check the current report of the sanctuary
+Monkey{size=20.0, age=1.0, name='Lovely Animal', sex=M, weight=10.0, favoriteFood=FRUIT, contained_inside='', areaNeeded=10.0, species=HOWLER, UUID='0eac738d8146496ebe7b87a259e6e3d1'}
+Monkey{size=20.0, age=1.0, name='Lovely Animal', sex=M, weight=10.0, favoriteFood=FRUIT, contained_inside='', areaNeeded=10.0, species=HOWLER, UUID='ce8a9c146fbe45f8a13e2f2d31797141'}
+Monkey{size=20.0, age=1.0, name='Lovely Animal', sex=M, weight=10.0, favoriteFood=FRUIT, contained_inside='Isolation', areaNeeded=10.0, species=GUEREZA, UUID='d93ee0a8616742acb22fdc7d92a9b69a'}
+Monkey{size=20.0, age=1.0, name='Lovely Animal', sex=M, weight=10.0, favoriteFood=FRUIT, contained_inside='Isolation', areaNeeded=10.0, species=HOWLER, UUID='2ae81fd4761a4e739adf2b6d2a68c86f'}
+Makes sense, the new HOWLER got into an isolation
+So far all of the monkeys are of size 20, you can check there details in the report as well
+Lets try adding more of HOWLER & lets see how many an enclosure can store
+Monkey Added : true
+Monkey{size=20.0, age=1.0, name='Lovely Animal', sex=M, weight=10.0, favoriteFood=FRUIT, contained_inside='', areaNeeded=10.0, species=HOWLER, UUID='0eac738d8146496ebe7b87a259e6e3d1'}
+Monkey{size=20.0, age=1.0, name='Lovely Animal', sex=M, weight=10.0, favoriteFood=FRUIT, contained_inside='', areaNeeded=10.0, species=HOWLER, UUID='2ae81fd4761a4e739adf2b6d2a68c86f'}
+Monkey{size=20.0, age=1.0, name='Lovely Animal', sex=M, weight=10.0, favoriteFood=FRUIT, contained_inside='', areaNeeded=10.0, species=HOWLER, UUID='ce8a9c146fbe45f8a13e2f2d31797141'}
+Monkey{size=20.0, age=1.0, name='Lovely Animal', sex=M, weight=10.0, favoriteFood=FRUIT, contained_inside='Isolation', areaNeeded=10.0, species=GUEREZA, UUID='d93ee0a8616742acb22fdc7d92a9b69a'}
+Monkey{size=20.0, age=1.0, name='Lovely Animal', sex=M, weight=10.0, favoriteFood=FRUIT, contained_inside='Isolation', areaNeeded=10.0, species=HOWLER, UUID='c50869c6ebdb4beab734e4c3dd705a95'}
+Makes sense, new HOWLER got into isolation and older one into enclosement
+Let us push it
+Monkey Added : true
+Monkey{size=20.0, age=1.0, name='Lovely Animal', sex=M, weight=10.0, favoriteFood=FRUIT, contained_inside='', areaNeeded=10.0, species=HOWLER, UUID='0eac738d8146496ebe7b87a259e6e3d1'}
+Monkey{size=20.0, age=1.0, name='Lovely Animal', sex=M, weight=10.0, favoriteFood=FRUIT, contained_inside='', areaNeeded=10.0, species=HOWLER, UUID='2ae81fd4761a4e739adf2b6d2a68c86f'}
+Monkey{size=20.0, age=1.0, name='Lovely Animal', sex=M, weight=10.0, favoriteFood=FRUIT, contained_inside='', areaNeeded=10.0, species=HOWLER, UUID='c50869c6ebdb4beab734e4c3dd705a95'}
+Monkey{size=20.0, age=1.0, name='Lovely Animal', sex=M, weight=10.0, favoriteFood=FRUIT, contained_inside='', areaNeeded=10.0, species=HOWLER, UUID='ce8a9c146fbe45f8a13e2f2d31797141'}
+Monkey{size=20.0, age=1.0, name='Lovely Animal', sex=M, weight=10.0, favoriteFood=FRUIT, contained_inside='Isolation', areaNeeded=10.0, species=GUEREZA, UUID='d93ee0a8616742acb22fdc7d92a9b69a'}
+Monkey{size=20.0, age=1.0, name='Lovely Animal', sex=M, weight=10.0, favoriteFood=FRUIT, contained_inside='Isolation', areaNeeded=10.0, species=HOWLER, UUID='4bd4d49f42b5449aa03b6eb22b2ca135'}
+So far 4 monkeys are added, lets check the space left in enclosure
+Enclosement Area Left : 10.0
+Adding 1 more HOWLER
+Monkey Added : true
+Enclosement Area Left : 0.0
+Oh, we are now at a critical moment, lets try to add 1 more
+Monkey Added : false
+Oh, the system denied to add the monkey
+So, far the the system was handling the monkeys default value
+As the names you can see are like Lovely Animal
+Let us try giving explicit names to the animal
+Before that let us add another ISOLATION
+Lets create a monkey HOWLER with known name as TOCAMEI
+Monkey Added : true
+Lets check
+Monkey{size=20.0, age=1.0, name='Lovely Animal', sex=M, weight=10.0, favoriteFood=FRUIT, contained_inside='', areaNeeded=10.0, species=HOWLER, UUID='0eac738d8146496ebe7b87a259e6e3d1'}
+Monkey{size=20.0, age=1.0, name='Lovely Animal', sex=M, weight=10.0, favoriteFood=FRUIT, contained_inside='', areaNeeded=10.0, species=HOWLER, UUID='2ae81fd4761a4e739adf2b6d2a68c86f'}
+Monkey{size=20.0, age=1.0, name='Lovely Animal', sex=M, weight=10.0, favoriteFood=FRUIT, contained_inside='', areaNeeded=10.0, species=HOWLER, UUID='4bd4d49f42b5449aa03b6eb22b2ca135'}
+Monkey{size=20.0, age=1.0, name='Lovely Animal', sex=M, weight=10.0, favoriteFood=FRUIT, contained_inside='', areaNeeded=10.0, species=HOWLER, UUID='c50869c6ebdb4beab734e4c3dd705a95'}
+Monkey{size=20.0, age=1.0, name='Lovely Animal', sex=M, weight=10.0, favoriteFood=FRUIT, contained_inside='', areaNeeded=10.0, species=HOWLER, UUID='ce8a9c146fbe45f8a13e2f2d31797141'}
+Monkey{size=20.0, age=1.0, name='Lovely Animal', sex=M, weight=10.0, favoriteFood=FRUIT, contained_inside='Isolation', areaNeeded=10.0, species=GUEREZA, UUID='d93ee0a8616742acb22fdc7d92a9b69a'}
+Monkey{size=20.0, age=1.0, name='Lovely Animal', sex=M, weight=10.0, favoriteFood=FRUIT, contained_inside='Isolation', areaNeeded=10.0, species=HOWLER, UUID='f1e5b45d57c84aa3b08c95a85de5b750'}
+Monkey{size=20.0, age=1.0, name='TOCAMEI', sex=M, weight=10.0, favoriteFood=NUTS, contained_inside='Isolation', areaNeeded=10.0, species=HOWLER, UUID='ea748af0e44947338766cc0b705f8b75'}
+It worked, Lets just try to get the shopping list
+{FRUIT=3500.0, NUTS=500.0}
+So you get your list of item and quantity in grams as well
+Let see do we have any SPIDER kind of monkey ?
+Species "SPIDER" is not present in the sanctuary
+Let see do we have any GUEREZA kind of monkey ?
+GUEREZA are found in : [ISOLATION]
+Let see do we have any SPIDER kind of monkey ?
+Seems correct
+Lets just dump the Enclosement
+Lets check the current report of the SANCTUARY
+Monkey{size=20.0, age=1.0, name='Lovely Animal', sex=M, weight=10.0, favoriteFood=FRUIT, contained_inside='Isolation', areaNeeded=10.0, species=GUEREZA, UUID='d93ee0a8616742acb22fdc7d92a9b69a'}
+Monkey{size=20.0, age=1.0, name='Lovely Animal', sex=M, weight=10.0, favoriteFood=FRUIT, contained_inside='Isolation', areaNeeded=10.0, species=HOWLER, UUID='f1e5b45d57c84aa3b08c95a85de5b750'}
+Monkey{size=20.0, age=1.0, name='TOCAMEI', sex=M, weight=10.0, favoriteFood=NUTS, contained_inside='Isolation', areaNeeded=10.0, species=HOWLER, UUID='ea748af0e44947338766cc0b705f8b75'}
+Lets just dump an Isolation
+Lets check the current report of the SANCTUARY
+Monkey{size=20.0, age=1.0, name='Lovely Animal', sex=M, weight=10.0, favoriteFood=FRUIT, contained_inside='Isolation', areaNeeded=10.0, species=GUEREZA, UUID='d93ee0a8616742acb22fdc7d92a9b69a'}
+Monkey{size=20.0, age=1.0, name='Lovely Animal', sex=M, weight=10.0, favoriteFood=FRUIT, contained_inside='Isolation', areaNeeded=10.0, species=HOWLER, UUID='f1e5b45d57c84aa3b08c95a85de5b750'}
+Lets check the current species found in the SANCTUARY
+Species found in sanctuary : [GUEREZA, HOWLER]
+Seems correct
+Lets check whether the animal can tell where it is
+Lets create a new animal and ask it where it is contained
+Animal contained in : ""
+Oh that seems reasonable, the animal is not put up anywhere yet
+Lets create an Isolation and add animal to it and then check
+Monkey Added : true
+Animal contained in : "Isolation"
+That is right, as every new animal is contained in Isolation first
+Lets say at some day, it good time for an animal to let loose in wild or it may get transferred to some other home, So we need to remove it
+So, the UUID for the animal is : 48268cddcd624a05af25c675c3fed32e
+Lets remove this animal......Dont worry it for the good
+Is animal removed : true
+Lets have a all monkey sanctuary report 
+Monkey{size=20.0, age=1.0, name='Lovely Animal', sex=M, weight=10.0, favoriteFood=FRUIT, contained_inside='Isolation', areaNeeded=10.0, species=GUEREZA, UUID='d93ee0a8616742acb22fdc7d92a9b69a'}
+Monkey{size=20.0, age=1.0, name='Lovely Animal', sex=M, weight=10.0, favoriteFood=FRUIT, contained_inside='Isolation', areaNeeded=10.0, species=HOWLER, UUID='f1e5b45d57c84aa3b08c95a85de5b750'}
+Let us also check where the animal is contained in 
+Animal contained in : ""
+Yeah, it is not contained any where inside this sanctuary
+
+
+
+Thanks for reading the demo run of the project.
+HAVE A NICE DAY !!!
