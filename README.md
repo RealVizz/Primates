@@ -1,4 +1,4 @@
-# Project 1 - Primates
+# Primates
 
 It is a program which simulates a typical scenario in an sanctuary.
 
